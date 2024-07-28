@@ -1,0 +1,9 @@
+spring:
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+    vectorstore:
+      redis:
+        uri: "redis://localhost:6379"
+        index: "vectorstore"
+        prefix: "default:"
