@@ -4,7 +4,6 @@ import com.tomaszezula.springai.rag.call
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import kotlin.test.Test
-import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 @SpringBootTest

@@ -23,7 +23,7 @@ class DefaultChatService(
                         .withFunction("CurrentWeather")
                         .build()
                 )
-            )?.result?.output?.content ?: "Sorry, I can't help you right now"
+            )?.result?.output?.content ?: ""
 
             ServiceResponse.Success(response)
         } catch (e: Exception) {
