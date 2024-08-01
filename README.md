@@ -3,6 +3,7 @@ This is a collection of examples for AI engineering using Spring Boot, Java and 
 
 ## Table of Contents
 - [Function Calling](#function-calling)
+- [Retrieval Augmented Generation](#retrieval-augmented-generation)
 
 ## Function Calling
 
@@ -18,3 +19,14 @@ Implementation:
   - [Implementation](rag-chatbot/src/main/kotlin/com/tomaszezula/springai/rag/service/WeatherService.kt)
   - [Configuration](rag-chatbot/src/main/kotlin/com/tomaszezula/springai/rag/Config.kt)
 - [Tests](rag-chatbot/src/test/kotlin/com/tomaszezula/springai/rag/service/DefaultChatServiceTest.kt)
+
+## Retrieval Augmented Generation
+
+Data sets:
+1. What's the sunniest place in the US? Let's find out!
+   - [Comparative Climatic Data, 2015 (pdf)](https://www1.ncdc.noaa.gov/pub/data/ccd-data/CCD-2015.pdf)
+2. Weather forecast in various US cities
+- [New York](https://api.weather.gov/gridpoints/OKX/33,35/forecast/hourly)
+- [Los Angeles](https://api.weather.gov/gridpoints/LOX/155,45/forecast/hourly)
+- [Austin](https://api.weather.gov/gridpoints/EWX/156,91/forecast/hourly)
+- [Chicago](https://api.weather.gov/gridpoints/LOT/76,73/forecast/hourly)

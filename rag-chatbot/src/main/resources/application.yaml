@@ -7,3 +7,7 @@ spring:
         uri: "redis://localhost:6379"
         index: "vectorstore"
         prefix: "default:"
+        initialize-schema: true
+rag:
+  etl:
+    source-dir: "classpath:weather-data"

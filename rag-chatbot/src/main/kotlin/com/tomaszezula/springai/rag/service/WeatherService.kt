@@ -16,9 +16,9 @@ sealed interface WeatherResponse {
     data class Failure(val reason: String) : WeatherResponse
 }
 
-enum class TempUnit {
-    CELSIUS,
-    FAHRENHEIT
+enum class TempUnit(val symbol: String, val description: String) {
+    CELSIUS("C", "Celsius"),
+    FAHRENHEIT("F", "Fahrenheit")
 }
 
 class WeatherServiceImpl(
